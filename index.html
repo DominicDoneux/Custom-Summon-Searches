@@ -24,6 +24,9 @@
 				
 				<p>Summon searches nearly all of our holdings by default. To create a more targeted search, select limiters below and copy the <abbr title="HyperText Markup Language">HTML</abbr> from the bottom of the page to insert into any website.</p>
 											
+					<label for="site">Summon Site</label>
+					<input type="text" name="site" id="site" placeholder="Enter your Summon site name (e.g. ''demo'' will produce demo.summon.serialssolutions.com)" /><br />
+
 					<label for="keywords">Subject Terms</label>
 					<input type="text" name="keywords" id="keywords" placeholder="Separate terms with commas" /><br />
 								
@@ -276,7 +279,7 @@
 <div id="summon-code">
 &lt;!-- Start of Custom Summon Search code --&gt;<br />						
 <!-- Edit the following line to include the URL to your Summon instance. Make sure to leave the /search at the end -->
-&lt;form method="GET" action="http://gvsu.summon.serialssolutions.com/search"&gt;<br />
+<span id="summon-site">&lt;form method="GET" action="https://demo.summon.serialssolutions.com"&gt;</span><br />
 <!-- Do not edit below this line -->
 &lt;label for="s.q"&gt;Search the Library for:&lt;/label&gt;&lt;br /&gt;
 &lt;input type="text" name="s.q" id="s.q" /&gt;<br />

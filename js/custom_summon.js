@@ -62,6 +62,10 @@ $(function() {
 		$("#insertterms").html(this.value ? '&lt;input type="hidden" name="s.fvgf[]" value="SubjectTerms,or,' + this.value + '" /&gt;<br />' : '');
 	});
 	
+	$("#site").keyup(function() {
+		$("#summon-site").html(this.value ? '&lt;form method="GET" action="https://' + this.value + '.summon.serialssolutions.com"&gt;': '&lt;form method="GET" action="https://demo.summon.serialssolutions.com"&gt;');
+	});
+
 	$(".accordian-body").hide();
 	
 	$(".accordian-head").find("h2").prepend("<span>&#9656;</span>");
